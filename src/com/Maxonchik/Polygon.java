@@ -121,10 +121,8 @@ public class Polygon {
     public Polygon intersectRectangleWithTriangle(Polygon a){
          ArrayList<Point> s = new ArrayList<>();
          for (int i = 0; i < a.size(); i++) {
-             if (this.pointInsideRectangle(a.get(i))) {
+             if (this.pointInsideRectangle(a.get(i)))
                  s.add(a.get(i));
-             }
-             break;
          }
          for (int i = 0; i < this.size(); i++){
              if (a.pointInsideTriangle(polygon.get(i)))
